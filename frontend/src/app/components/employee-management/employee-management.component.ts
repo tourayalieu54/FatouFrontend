@@ -125,7 +125,7 @@ export class EmployeeManagementComponent implements OnInit{
 
   updateEmployee(): void{
     const payload = this.employeeForm.value;
-    this.employeeService.updateEmployee(this.updatingEmployee.id, payload).subscribe({
+    this.employeeService.updateEmployee(this.updatingEmployee.mainId, payload).subscribe({
       next: response => {
         alert('Employee information updated successfully!');
         this.fetchAllEmployees();
@@ -145,7 +145,7 @@ export class EmployeeManagementComponent implements OnInit{
   }
 
   deleteEmployee(): void{
-    this.employeeService.deleteEmployee(this.deletingEmployee.id).subscribe({
+    this.employeeService.deleteEmployee(this.deletingEmployee.mainId).subscribe({
       next: next => {
         alert('Employee deleted successfully!');
         this.fetchAllEmployees();

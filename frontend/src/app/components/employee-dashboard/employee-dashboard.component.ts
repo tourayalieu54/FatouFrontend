@@ -50,7 +50,7 @@ export class EmployeeDashboardComponent implements OnInit{
   }
 
   resign(): void{
-    this.employeeService.deleteEmployee(this.employee.id).subscribe({
+    this.employeeService.deleteEmployee(this.employee.mainId).subscribe({
       next: next => {
         alert('Resignation submitted successfully, we are saddened to part with, wishing you all the best!');
         this.router.navigate(['/login'])
