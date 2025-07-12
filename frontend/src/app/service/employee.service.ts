@@ -8,7 +8,7 @@ import { Observable } from "rxjs";
 
 export class EmployeeService{
 
-    private url = 'http://localhost:8080/api/employees'
+    private url = 'https://fatoujeng.onrender.com/api/employees'
 
     constructor(private http: HttpClient){}
 

@@ -7,7 +7,7 @@ import { Observable } from "rxjs";
 })
 
 export class AttendanceService {
-    private url = 'http://localhost:8080/api/attendance';
+    private url = 'https://fatoujeng.onrender.com/api/attendance';
 
     constructor(private http: HttpClient) {}
 

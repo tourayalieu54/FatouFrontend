@@ -9,7 +9,7 @@ import { Observable } from "rxjs";
 
 export class AuthService{
 
-    private url = 'http://localhost:8080'
+    private url = 'https://fatoujeng.onrender.com'
     private jwtKey = 'rohey';
 
     constructor(private http: HttpClient){}
